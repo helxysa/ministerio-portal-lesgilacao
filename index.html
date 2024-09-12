@@ -41,6 +41,7 @@
 
     <main class="container mx-auto px-4 py-8">
         
+        
 
         <div class="flex">
             <aside class="w-1/4 pr-4">
@@ -117,8 +118,37 @@
                     </li>
                 </ul>
             </aside>
+            
 
             <section class="w-3/4">
+                <section class="w-3/4">
+                    <div class="bg-blue-800 p-6 rounded-lg shadow-md mb-6">
+                        <h2 class="text-xl font-bold text-white mb-4">Pesquisar Por:</h2>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="titulo" class="block text-sm font-medium text-white mb-1">Título do Documento:</label>
+                                <input type="text" id="titulo" name="titulo" placeholder="Título do Documento" class="w-full p-2 border border-gray-300 rounded text-gray-900">
+                            </div>
+                            <div>
+                                <label for="descricao" class="block text-sm font-medium text-white mb-1">Descrição do Documento:</label>
+                                <input type="text" id="descricao" name="descricao" placeholder="Descrição do Documento" class="w-full p-2 border border-gray-300 rounded text-gray-900">
+                            </div>
+                            <div>
+                                <label for="data_de" class="block text-sm font-medium text-white mb-1">Data (De):</label>
+                                <input type="date" id="data_de" name="data_de" class="w-full p-2 border border-gray-300 rounded text-gray-900">
+                            </div>
+                            <div>
+                                <label for="data_ate" class="block text-sm font-medium text-white mb-1">Data (Até):</label>
+                                <input type="date" id="data_ate" name="data_ate" class="w-full p-2 border border-gray-300 rounded text-gray-900">
+                            </div>
+                            <div class="flex space-x-4">
+                                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Consultar</button>
+                                <button type="reset" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Limpar Filtro</button>
+                            </div>
+                        </form>
+                    </div>
+
+
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">ATOS E NORMAS</h2>
                 <table class="w-full border-collapse">
                     <thead>
